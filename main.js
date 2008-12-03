@@ -24,7 +24,7 @@ function closeIcon(that){
   $("#menuC").animate({height:0},300);
 }
 
-$("#contact").click(function(){
+$("#contact,#styleBtn").click(function(){
 $("html,body").animate({scrollTop:$("body").height()},"slow");
 closeIcon($("#myMenu"));
 })
@@ -45,12 +45,16 @@ console.log(e);
 $("form").ajaxSubmit({
   beforeSubmit:function(){
     console.log("i will be submited");
+      $("form #styleBtn").html("sending")
+  
   },
   success:function(e){
-    console.log(e)
+    console.log(e);
+    $("form #styleBtn").html("Thank You")
   },
   error:function(){
-    alert("error");
+    $("form #styleBtn").html("Try Again")
+  
   }
 })
 })
