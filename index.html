@@ -8,6 +8,7 @@
   <link rel="stylesheet" href="lib/w3css.css">
   <link rel="stylesheet" href="lib/cssLibrary.css">
   <script src="lib/jquery.js"></script>
+  <script src="lib/jquery.form.js"></script>
   <script src="lib/MfunctionsLap.js"></script>
   <title>Austine Samuel : Info</title>
 </head>
@@ -16,6 +17,12 @@
   <nav class="flexBetween w3-padding w3-white">
 <img style="width:80%;max-width:300px;max-height:150px;height:auto;"src="https://i.imgur.com/5AHh94E.jpg">
 <!--my menu icon-->
+<div class="menu2">
+  <button id="contact">Contact Me</button>
+<button id="skills">Best Skills</button>
+<button id="usage">Skills Usage</button>
+</div>
+
 <div id="myMenu">
 <div id="s1"></div>
 <div id="s2"></div>
@@ -23,7 +30,22 @@
 </div>
 
   </nav>
-<br><br>
+  <br><br>  
+
+<div id="menuC" class="fixed w3-white w3-padding">
+<button id="contact">Contact Me</button>
+<button id="skills">Best Skills</button>
+<button id="usage">Skills Usage</button><br><br>
+
+<div id="media" class="flexBetween">
+<i class="fa fa-facebook"></i>
+<i class="fa fa-envelope"  style="color:rgb(255, 102, 0);"></i>
+<i class="fa fa-github" style="color:black"></i>
+<i style="color:rgba(0, 51, 255, 0.816);">In</i>
+</div>
+
+</div>
+
   <div id="top" class="flexCenter">
 <div id="box1" class="flexCenter">
 <div id="ctn" ></div>
@@ -31,7 +53,7 @@
   </div>
 
   <h2 id="heading" class="w3-padding">BUILD<span> HIGH QUALITY</span>
-SOFTWARE WITH ME </code>,
+SOFTWARE WITH ME 
   </h2>
 
   <section>  
@@ -96,8 +118,7 @@ i'll build your dreamed software or colaborates with your team to makes sure of 
    
      <span class="w3-tooltip"><img src="image/pwa.png"><br>PWA
        <i class="w3-text">building cross platforms  apps using Google PWA Technology</i></span>
-       <h4 id="heading" class="w3-block">SKILLs <i style="font-style:normal;color:var(--color)">USAGE</i> :</h4>
-     
+       <h4 id="heading" class="w3-block">SKILLs <i id="usageCtn" style="font-style:normal;color:var(--color)">USAGE</i> :</h4>
      
    <span class="w3-tooltip" style="max-width:290px;"><img style="border:4px solid var(--red);" src="image/frontEnd.jpg"><br><br>
     <b style="font-weight:bold;font-size:large;color:var(--black) !important"> FrontEnd Engineer</b><br><br><cite style="font-style:normal;font-size:smaller;">
@@ -114,14 +135,14 @@ i'll build your dreamed software or colaborates with your team to makes sure of 
   </div>
   <!--uses -->
   
-  <h2 id="heading" class="w3-padding">LETS<span>  DISCUSE</span>
+  <h2 id="heading" class="w3-padding">LETS<span  >  DISCUSE</span>
     ABOUT THE PROJECT </code>,
       </h2>
 
     <div class="w3-padding w3-light-grey" id="form">
 <div id="formBox">
 
-<form>
+<form method="post" action="php.php">
   <label for="email">Email *</label>
 <div class="w3-block">
    <input type="email" name="email" placeholder="Enter Email address" id="email" required>
@@ -131,11 +152,20 @@ i'll build your dreamed software or colaborates with your team to makes sure of 
 <div class="w3-block">
   <input type="text" name="name" placeholder="Enter your Name" id="name">
 </div><br>
-<button id="styleBtn">Submit</button>
+<button id="styleBtn">Submit</button><br><br>
+
+<div id="media" class="flexBetween w3-padding">
+  <i class="fa fa-facebook"></i>
+  <i class="fa fa-envelope"  style="color:rgb(255, 102, 0);"></i>
+  <i class="fa fa-github" style="color:black"></i>
+  <i style="color:rgba(0, 51, 255, 0.816);">In</i>
+  </div><br>
+    
 </form>
 
-</div>
-    </div>
+<br><br>
+
+    </div></div>
 
 </div>
 </body>

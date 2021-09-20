@@ -17,6 +17,56 @@ nav{
   max-height:60px;
   overflow:hidden;
   align-items:center;
+  background:white;
+  z-index:5;
+}
+
+#menuC{
+background:rgb(255, 255, 255) !important;
+min-height:max-content;
+z-index:4;
+border-bottom:1px solid rgb(241, 241, 241);
+box-shadow:0px 2px 10px 0px rgb(233, 231, 231);
+ overflow:hidden;
+ transition:0.6 ease;
+ transition-delay: 1ms;
+ transition-duration:400ms;
+height:0;
+}
+
+#menuC button{
+  width:100%;
+  padding:14px;
+  color:grey;
+  border-bottom:1px solid rgb(233, 232, 232);
+}
+
+#media{
+padding:10px;
+width:max-content;
+}
+
+#media i{
+  width:30px;
+  height:30px;
+  border-radius:15px;
+  color:rgb(0, 153, 255);
+  margin:0 auto;
+  display:flex;
+  cursor:pointer;
+  align-items:center;
+  justify-content:center;
+  margin-left:3px;
+  box-shadow:1px 1px 10px 0px rgb(216, 216, 216);
+}
+
+#media i:hover{
+  box-shadow:inset 1px 1px 10px 0px rgb(216, 216, 216);
+
+}
+#menuC button:hover{
+  color:var(--color);
+  background:rgb(240, 240, 240);
 }
 nav button{
 color:var(--red);
@@ -34,7 +84,7 @@ flex-flow:row wrap;
   transition:0.6 ease;
   transition-duration:1s;
   width:100%;
-  height:2px;
+  height:4px;
   background:var(--color);
 
 }
@@ -135,7 +185,7 @@ color:rgb(162, 162, 162);
   overflow:hidden;
  
   transition-delay: 100ms;
-  transition-duration:1000ms;
+  transition-duration:500ms;
  animation-name:none;
   animation-duration:1s;
   margin-top:10px;
@@ -207,6 +257,10 @@ border-radius:150px;
   margin:0 auto;
    
 }
+#form label{
+  color:grey;
+  font-size:smaller;
+}
 #form #formBox{
   width:80%;
   margin:0 auto;
@@ -219,4 +273,20 @@ background:white;
 border-radius:2px;
  padding:10px;
 margin-top:10px;
+}
+
+@media screen and (min-width:600px){
+  #myMenu{
+    display:none !important;
+  }
+}
+
+.menu2 button:hover{
+  background:rgb(247, 250, 255);
+}
+.menu2 button{
+color:rgb(0, 101, 252) !important;
+  padding:3px 10px;
+  border-radius:10px;
+  font-weight:bolder;
 }
