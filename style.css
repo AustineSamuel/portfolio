@@ -279,8 +279,14 @@ margin-top:10px;
   #myMenu{
     display:none !important;
   }
+.menu2{
+  display:none;
+}
 }
 
+.menu2{
+  display:none;
+}
 .menu2 button:hover{
   background:rgb(247, 250, 255);
 }
