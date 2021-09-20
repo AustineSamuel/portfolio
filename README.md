@@ -1,3 +1,3 @@
 # Simple portfolio
 simple portfolio
-[Preview](austinesamuel.netlify.app)
+[Preview](https://austinesamuel.netlify.app)
